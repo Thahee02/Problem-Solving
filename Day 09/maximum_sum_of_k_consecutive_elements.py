@@ -11,10 +11,10 @@ maximum_sum = window_max
 
 # slide the window
 for i in range(k, len(numbers)):
-    window_max -= numbers[i-k] + numbers[i]
+    window_max = window_max - numbers[i-k] + numbers[i]
     if window_max > maximum_sum:
         maximum_sum = window_max
 
-print(maximum_sum)
+print("Maximum sum:", maximum_sum)
 
 
